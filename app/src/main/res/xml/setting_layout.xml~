@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference android:hint="Number Phone "
+        android:key="setnumphone"
+        android:editable="true"
+        android:inputType="phone"
+        android:title="Set Your Friend Phone Number "
+        android:summary="Please Input the Number Phone"/>
+    <EditTextPreference android:hint="Help Massage "
+        android:key="setmassage"
+        android:editable="true"
+        android:title="Set Your Massage "
+        android:summary="Massage for your friend if this application on Automatically"/>
+
+</PreferenceScreen>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mukusuzuki.helpme.MainActivity"
+    android:background="#cb35aee2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/help_2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="ME!!"
+            android:id="@+id/textView"
+            android:layout_gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="35dp"
+            android:typeface="serif"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_marginLeft="10dp" />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/setting_btn"
+            android:background="@drawable/setting2edited"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/tumbal"
+            android:visibility="invisible"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/setting_btn"
+            android:layout_toStartOf="@+id/setting_btn"
+            android:layout_marginRight="32dp"
+            android:layout_marginEnd="32dp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Location"
+        android:id="@+id/tv_cgh_location"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_alignTop="@+id/tv_location"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="BATTRE"
+        android:id="@+id/textView2"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Your Current Location :"
+        android:id="@+id/tv_location"
+        android:layout_marginBottom="63dp"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="HELP ME!!!!"
+        android:id="@+id/tx_help"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:textColor="#fd0000"
+        android:phoneNumber="false" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test"
+        android:id="@+id/btn_test"
+        android:layout_above="@+id/tv_location"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Please Go To Setting First for set your default Phone Number and Helping massage"
+        android:id="@+id/hint"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="#000000"
+        android:textIsSelectable="false"
+        android:textSize="25dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="No Phone Number Set"
+        android:id="@+id/set"
+        android:layout_alignBaseline="@+id/btn_test"
+        android:layout_alignBottom="@+id/btn_test"
+        android:layout_toRightOf="@+id/btn_test"
+        android:layout_toEndOf="@+id/btn_test"
+        android:layout_marginLeft="10dp"
+        android:textColor="#1f3f4d"
+        android:textSize="15dp" />
+
+</RelativeLayout>
